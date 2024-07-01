@@ -1,18 +1,25 @@
-body, html {
-    width: 320px;
-    height: 100%;
-}
-body{
-    box-shadow: 
-    16px 0px 52px 0px #0E185033,
-    -2px 0px 4px 0px #454F7E05;
-}
 body, html, button {
     font-family:'TT Lakes', Times, serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+}
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 320px;
+    box-shadow: 
+    16px 0px 52px 0px #0E185033,
+    -2px 0px 4px 0px #454F7E05;
+}
+
+@media (min-height: 1024px) {
+    .footer-side-bar{
+        position: absolute;
+        top: 804px;
+    }
 }
 
 /* Головная часть Сайд-бара */
@@ -93,8 +100,8 @@ body, html, button {
 /* Нижнии кнопки Сайд-бар */
 
 .footer-side-bar {
-    margin-top: 244px;
-    margin-bottom: 32px;
+    margin-top: auto;
+    padding-bottom: 32px;
 }
 .footer-side-bar__button-all {
     margin-right: auto;
